@@ -15,7 +15,7 @@ class VoiceAlertService {
     } catch (_) {}
   }
 
-  Future<void> speakPaymentReceived(double amount, {String channel = "Bangla QR"}) async {
+  Future<void> speakPaymentReceived(double amount, {String channel = "QR Bangla"}) async {
     final text = "${amount.toInt()} টাকা পেমেন্ট সফল হয়েছে। ধন্যবাদ।";
     await _tts.speak(text);
   }
