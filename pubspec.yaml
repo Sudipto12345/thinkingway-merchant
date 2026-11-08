@@ -1,5 +1,5 @@
-name: thinkingway_merchant
-description: "THINKINGWAY Merchant - Smart Payment. Smart Business. (Bangla QR & SSLCOMMERZ)"
+name: qr_bangla_merchant
+description: "QR BANGLA Powered by THINKINGWAY W - Smart Payment. Smart Bangladesh."
 publish_to: 'none'
 version: 1.0.0+1
 
