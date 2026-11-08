@@ -1,4 +1,4 @@
-name: Build THINKINGWAY Merchant APK
+name: Build QR BANGLA (THINKINGWAY) APK
 
 on:
   push:
@@ -24,19 +24,19 @@ jobs:
           channel: 'stable'
           cache: true
 
-      - name: Bootstrap Flutter Android Project & Copy Source
+      - name: Bootstrap Flutter Android Project & Copy QR BANGLA Source
         run: |
-          flutter create --org com.thinkingway --project-name thinkingway_merchant ./build_workspace
+          flutter create --org com.thinkingway --project-name qr_bangla_merchant ./build_workspace
           cp -r lib/* ./build_workspace/lib/
           cp pubspec.yaml ./build_workspace/pubspec.yaml
           cd ./build_workspace
           flutter pub get
           flutter build apk --release --no-tree-shake-icons
-          cp build/app/outputs/flutter-apk/app-release.apk ../THINKINGWAY-Merchant-v1.0.0-release.apk
+          cp build/app/outputs/flutter-apk/app-release.apk ../QR-BANGLA-THINKINGWAY-v1.0.0-release.apk
 
       - name: Upload Release APK Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: THINKINGWAY-Merchant-APK
-          path: THINKINGWAY-Merchant-v1.0.0-release.apk
+          name: QR-BANGLA-THINKINGWAY-APK
+          path: QR-BANGLA-THINKINGWAY-v1.0.0-release.apk
           retention-days: 30
