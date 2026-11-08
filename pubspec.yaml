@@ -1,0 +1,23 @@
+name: thinkingway_merchant
+description: "THINKINGWAY Merchant - Smart Payment. Smart Business. (Bangla QR & SSLCOMMERZ)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_fonts: ^6.2.1
+  intl: ^0.19.0
+  qr_flutter: ^4.1.0
+  flutter_tts: ^4.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
