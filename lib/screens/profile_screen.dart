@@ -7,22 +7,28 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("Business Profile & Branches")),
+      appBar: AppBar(title: const Text("প্রোফাইল ও সেটিংস (Profile)")),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: const [
           Card(
             child: ListTile(
-              leading: Icon(Icons.verified_user, color: AppColors.secondaryGreen),
+              leading: CircleAvatar(
+                backgroundColor: AppColors.primaryNavy,
+                child: Icon(Icons.verified_user, color: AppColors.secondaryGreen),
+              ),
               title: Text("Rahim Store (TW-MER-8801)"),
-              subtitle: Text("Trade License: RCC-TL-2025-8841 • Partner KYC Verified"),
+              subtitle: Text("QR BANGLA Merchant • Powered by THINKINGWAY W"),
             ),
           ),
           Card(
             child: ListTile(
-              leading: Icon(Icons.store, color: AppColors.primaryNavy),
-              title: Text("3 Active Branches in Rajshahi"),
-              subtitle: Text("Shaheb Bazar • Boalia New Market • Kazla Gate (RU)"),
+              leading: CircleAvatar(
+                backgroundColor: AppColors.secondaryGreen,
+                child: Icon(Icons.badge, color: Colors.white),
+              ),
+              title: Text("Md. Sudipto Halder"),
+              subtitle: Text("Field Executive • Agent & DSO Network"),
             ),
           ),
         ],
